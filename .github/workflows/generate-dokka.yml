@@ -24,13 +24,11 @@ jobs:
         java-version: 1.8
         
     - name: Generate docs
-      run: ./gradlew dokka
+      run: |
+        rm -r dokka
+        ./gradlew dokka
       
-    - name: Push changes
-      uses: actions-go/push@v1
+    - uses: actions-go/push@master
       with:
-        author-email: github-actions@users.noreply.github.com
-        author-name: GitHub Actions
-        create-commit: true 
-        commit-files: dokka/
-        commit-message: Updated docs      
+        commit-message: '[Bot] update docs'
+        remote: origin
