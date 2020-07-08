@@ -8,13 +8,17 @@ jobs:
   dokka:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Merge changes
+      uses: everlytic/branch-merge@1.0.2
+      with:
+        #github_token: # default is ${{ github.token }}
+        source_ref: master
+        target_branch: gh-pages
+
+    - name: Checkout pages branch
+      uses: actions/checkout@v2
       with:
         ref: gh-pages
-    
-    - name: Merge changes
-      run: git merge master
-        
         
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
