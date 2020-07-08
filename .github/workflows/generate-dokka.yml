@@ -13,7 +13,7 @@ jobs:
         ref: gh-pages
     
     - name: Merge changes
-      run: git merge origin master
+      run: git merge origin/master
         
         
     - name: Set up JDK 1.8
