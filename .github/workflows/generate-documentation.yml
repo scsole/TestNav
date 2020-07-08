@@ -1,4 +1,4 @@
-name: Generate Docs
+name: Documentation
 
 on:
   push:
@@ -19,14 +19,14 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Generate docs
+      - name: Extract documentation
         run: |
           rm -r dokka
           ./gradlew dokka
       - name: Push changes
         run: |
-          git config --global user.name 'Github Actions'
-          git config --global user.email 'github-actions@github.com'
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -f dokka
-          git diff-index --quiet HEAD || git commit -m "[Bot] update docs"
+          git diff-index --quiet HEAD || git commit -m "Updated docs"
           git push
