@@ -8,9 +8,8 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 
-
 /**
- * Main activity comment.
+ * Main Activity comment.
  */
 class MainActivity : AppCompatActivity() {
 
