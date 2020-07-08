@@ -10,10 +10,16 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.testnav.R
 
+/**
+ * Dashboard fragment comment.
+ */
 class DashboardFragment : Fragment() {
 
     private lateinit var dashboardViewModel: DashboardViewModel
 
+    /**
+     * On create view function comment.
+     */
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
