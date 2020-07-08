@@ -25,8 +25,8 @@ jobs:
           ./gradlew dokka
       - name: Push changes
         run: |
-          git config --global user.name 'GitHub Action [Bot]'
-          git config --global user.email 'action@github.com'
+          git config --global user.name 'Github Actions'
+          git config --global user.email 'github-actions[bot]@github.com'
           git add -f dokka
-          git commit -m "[Bot] update docs"
+          git diff-index --quiet HEAD || git commit -m "[Bot] update docs"
           git push
