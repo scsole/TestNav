@@ -16,7 +16,7 @@ jobs:
       run: |
         git config --global user.name 'GitHub Action [Bot]'
         git config --global user.email 'action@github.com'
-        git fetch master
+        git fetch origin master
         git merge master
         
     - name: Set up JDK 1.8
