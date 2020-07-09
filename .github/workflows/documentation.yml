@@ -32,3 +32,5 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "Updated docs"
       - name: Push changes
         uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
