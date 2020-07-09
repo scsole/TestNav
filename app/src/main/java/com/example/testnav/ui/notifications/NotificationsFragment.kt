@@ -18,7 +18,7 @@ class NotificationsFragment : Fragment() {
     private lateinit var notificationsViewModel: NotificationsViewModel
 
     /**
-     * On create comment.
+     * On create comment
      */
     override fun onCreateView(
             inflater: LayoutInflater,
