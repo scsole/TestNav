@@ -10,10 +10,16 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.testnav.R
 
+/**
+ * Home fragment comment.
+ */
 class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
 
+    /**
+     * On create comment.
+     */
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
