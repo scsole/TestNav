@@ -29,6 +29,6 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -f dokka
       - name: Push changes
-        run:
+        run: |
           git diff-index --quiet HEAD || git commit -m "Updated docs"
           git push
