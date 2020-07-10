@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout gh-pages
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
         with:
           ref: gh-pages
           #      - uses: actions/setup-java@v1
@@ -21,7 +20,7 @@ jobs:
         run: |
           git config --local user.email "20161450+scsole@users.noreply.github.com"
           git config --local user.name "Sebastian Sole"
-          git fetch
+          git fetch --depth=1 origin master
           git branch -vv
           git rebase origin/master
           #      - name: Run dokka
