@@ -23,7 +23,7 @@ jobs:
           git config --local user.name "Sebastian Sole"
           git fetch
           git branch -vv
-          git rebase master
+          git rebase origin/master
           #      - name: Run dokka
           #        run: |
           #          rm -rf docs
