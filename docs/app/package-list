@@ -1,7 +1,0 @@
-$dokka.format:gfm
-$dokka.linkExtension:md
-
-com.example.testnav
-com.example.testnav.ui.dashboard
-com.example.testnav.ui.home
-com.example.testnav.ui.notifications
