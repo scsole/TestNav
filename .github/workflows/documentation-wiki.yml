@@ -14,6 +14,7 @@ jobs:
     - uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - run: mkdir app/build/dokka/app
     - name: Publish to GitHub Wiki
       uses: JoeIzzard/ghaction-wiki-sync@v1
       with:
