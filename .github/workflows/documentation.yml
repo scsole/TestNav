@@ -17,12 +17,12 @@ jobs:
           #      - uses: actions/setup-java@v1
           #        with:
           #          java-version: 1.8
-      - name: Rebase
+      - name: Merge changes
         run: |
           git config --local user.email "20161450+scsole@users.noreply.github.com"
           git config --local user.name "Sebastian Sole"
           git fetch --depth=1 origin master
-          git rebase origin/master
+          git merge origin/master
           #      - name: Run dokka
           #        run: |
           #          rm -rf docs
