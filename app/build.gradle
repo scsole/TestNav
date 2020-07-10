@@ -37,8 +37,8 @@ android {
     }
 
     dokka {
-        outputFormat = 'html'
-        outputDirectory = "$rootDir/dokka"
+        outputFormat = 'markdown'
+        outputDirectory = "$buildDir/dokka"
     }
 }
 
