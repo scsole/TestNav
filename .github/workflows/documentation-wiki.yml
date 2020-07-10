@@ -21,4 +21,4 @@ jobs:
       with:
         path: app/build/dokka/app
       env:
-        GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+        GITHUB_PERSONAL_ACCESS_TOKEN : ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
