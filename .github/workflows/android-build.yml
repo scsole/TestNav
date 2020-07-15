@@ -34,7 +34,7 @@ jobs:
       - name: Run instrumented tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: ${{ matrix.api-level }}
+          api-level: 30
           target: google_apis
           script: ./gradlew connectedAndroidTest
 
