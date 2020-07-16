@@ -21,4 +21,9 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.example.testnav", appContext.packageName)
     }
+
+    @Test
+    fun util_square_isCorrect() {
+        assertEquals(16, Utils.square(4))
+    }
 }

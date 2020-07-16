@@ -3,6 +3,7 @@ package com.example.testnav.ui.home
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.testnav.Utils.Companion.square
 
 /**
  * Home view model comment.
