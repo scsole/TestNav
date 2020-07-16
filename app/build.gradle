@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'org.jetbrains.dokka-android'
+apply plugin: "com.hiya.jacoco-android"
 
 android {
     compileSdkVersion 30
@@ -26,6 +27,7 @@ android {
             testCoverageEnabled true
         }
     }
+
 
 // To inline the bytecode built with JVM target 1.8 into
 // bytecode that is being built with JVM target 1.6. (e.g. navArgs)
